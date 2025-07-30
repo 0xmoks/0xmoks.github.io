@@ -16,6 +16,7 @@
     .keyword { color: #cb4b16; }
     .string { color: #2aa198; }
     .comment { color: #586e75; font-style: italic; }
+    .function { color: #cb4b16; }
     a { color: #b58900; text-decoration: none; }
     a:hover { text-decoration: underline; }
   </style>
@@ -37,8 +38,8 @@ SUMMARY = (
 )
 
 <span class="comment"># Learning Path</span>
-import coursera
-import udemy
+<span class="keyword">import</span> coursera
+<span class="keyword">import</span> udemy
 
 certifications = [
     <span class="string">"Google AI Essentials"</span>,
@@ -67,7 +68,6 @@ skills = {
     <span class="string">"Soft Skills"</span>: [<span class="string">"Leadership"</span>, <span class="string">"Remote Work Discipline"</span>, <span class="string">"Problem Solving"</span>]
 }
 
-
 <span class="comment"># Work Experience</span>
 work_experience = (
     (<span class="string">"LinkNova"</span>, <span class="string">"SEO Email Outreach Specialist"</span>, <span class="string">"Remote"</span>, <span class="string">"2019 - 2025"</span>),
@@ -76,16 +76,29 @@ work_experience = (
 )
 
 <span class="comment"># Projects</span>
-projects = [
-    { <span class="string">"title"</span>: <span class="string">"SEO Outreach Automation"</span>, <span class="string">"url"</span>: <a href="https://github.com/yourusername/seo-automation" target="_blank"><span class="string">"GitHub"</span></a> },
-    { <span class="string">"title"</span>: <span class="string">"Excel Dress Tracker"</span>, <span class="string">"url"</span>: <a href="https://github.com/yourusername/fashion-tracker" target="_blank"><span class="string">"GitHub"</span></a> },
-    { <span class="string">"title"</span>: <span class="string">"Linux Security Lab Notes"</span>, <span class="string">"url"</span>: <a href="https://github.com/yourusername/linux-labs" target="_blank"><span class="string">"GitHub"</span></a> }
-]
+<span class="function">def</span> SEO_outreach_automation():
+    <span class="comment"># Automated backlink outreach with 50+ daily emails using Trello, Sheets, and custom filters</span>
+    <span class="keyword">print</span>(<span class="string">"Visit: https://github.com/yourusername/seo-automation"</span>)
 
-<span class="keyword">def</span> contact_me():
-    print(<span class="string">"Let’s connect at mj.oralde@gmail.com or visit my LinkedIn."</span>)
+<span class="function">def</span> Excel_dress_tracker():
+    <span class="comment"># Created Excel-based inventory system for wedding and evening gowns</span>
+    <span class="keyword">print</span>(<span class="string">"Visit: https://github.com/yourusername/fashion-tracker"</span>)
 
-contact_me()
+<span class="function">def</span> Linux_security_labs():
+    <span class="comment"># Documented notes from Linux hardening and bash scripting security labs</span>
+    <span class="keyword">print</span>(<span class="string">"Visit: https://github.com/yourusername/linux-labs"</span>)
+
+
+<span class="comment"># Connect</span>
+<span class="function">def</span> contact_me():
+    <span class="keyword">print</span>(<span class="string">"Let’s connect at mj.oralde@gmail.com or visit my LinkedIn."</span>)
+
+<span class="comment"># Function Calls (clickable)</span>
+<a href="https://github.com/yourusername/seo-automation" target="_blank"><span class="function">SEO_outreach_automation()</span></a>  
+<a href="https://github.com/yourusername/fashion-tracker" target="_blank"><span class="function">Excel_dress_tracker()</span></a>  
+<a href="https://github.com/yourusername/linux-labs" target="_blank"><span class="function">Linux_security_labs()</span></a>  
+<a href="mailto:mj.oralde@gmail.com?subject=Inquiry from Portfolio&body=Hi Michael, I saw your portfolio and would like to connect."><span class="function">contact_me()</span></a>
+
 </pre>
 </body>
 </html>
