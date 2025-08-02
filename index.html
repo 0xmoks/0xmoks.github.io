@@ -24,72 +24,20 @@
         
         <div class="contact-info">
           <h3><span class="keyword">class</span> <span class="function">ContactInfo</span>:</h3>
-          
-          <div class="contact-item">
-            <span class="contact-label">Name:</span>
-            <span class="contact-value">Michael James L. Oralde</span>
-          </div>
-          
-          <div class="contact-item">
-            <span class="contact-label">Title:</span>
-            <span class="contact-value">Digital Operations Specialist</span>
-          </div>
-          
-          <div class="contact-item">
-            <span class="contact-label">Location:</span>
-            <span class="contact-value">Quezon City, Philippines</span>
-          </div>
-          
-          <div class="contact-item">
-            <span class="contact-label">Email:</span>
-            <a href="mailto:mj.oralde@gmail.com" class="contact-link">mj.oralde@gmail.com</a>
-          </div>
-          
-          <div class="contact-item">
-            <span class="contact-label">Phone:</span>
-            <a href="tel:+639179620119" class="contact-link">+63 917-962-0119</a>
-          </div>
-          
-          <div class="contact-item">
-            <span class="contact-label">LinkedIn:</span>
-            <a href="https://www.linkedin.com/in/mjoralde" target="_blank" class="contact-link">linkedin.com/in/mjoralde</a>
-          </div>
-          
-          <div class="contact-item">
-            <span class="contact-label">GitHub:</span>
-            <a href="https://github.com/0xmoks" target="_blank" class="contact-link">github.com/0xmoks</a>
-          </div>
+          <pre><span class="comment"># Personal Information Constants</span>
+<span class="variable">NAME</span> = <span class="string">"Michael James L. Oralde"</span>
+<span class="variable">LOCATION</span> = <span class="string">"Quezon City, Philippines"</span>
+<span class="variable">EMAIL</span> = <a href="mailto:mj.oralde@gmail.com" class="contact-link"><span class="string">"mj.oralde@gmail.com"</span></a>
+<span class="variable">PHONE</span> = <a href="tel:+639179620119" class="contact-link"><span class="string">"+63 917-962-0119"</span></a>
+<span class="variable">GITHUB</span> = <a href="https://github.com/0xmoks" target="_blank" class="contact-link"><span class="string">"github.com/0xmoks"</span></a></pre>
         </div>
         
-        <div class="quick-stats">
-          <h3><span class="keyword">def</span> <span class="function">quick_stats</span>():</h3>
-          <div class="stats-grid">
-            <div class="stat-box">
-              <div class="stat-number">12+</div>
-              <div class="stat-label">Years Exp</div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-number">5</div>
-              <div class="stat-label">Certs</div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-number">3</div>
-              <div class="stat-label">Projects</div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-number">2</div>
-              <div class="stat-label">Courses</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="command-line">
-          <span class="prompt">$</span> <span class="command">./status.sh</span>
-          <div class="output">
-            <span class="success">✓</span> Available for opportunities<br>
-            <span class="success">✓</span> Open to remote work<br>
-            <span class="success">✓</span> Actively learning
-          </div>
+        <div class="social-links">
+          <h3><span class="keyword">import</span> <span class="variable">social</span></h3>
+          <pre><span class="comment"># Click to visit the links</span>
+<a href="https://www.facebook.com/mjoralde" target="_blank"><span class="function">open_facebook()</span></a>
+<a href="https://www.linkedin.com/in/mjoralde" target="_blank"><span class="function">open_linkedin()</span></a>
+<a href="mailto:mj.oralde@gmail.com"><span class="function">send_email()</span></a></pre>
         </div>
       </div>
     </div>
@@ -123,23 +71,25 @@
 <span class="keyword">import</span> coursera  
 <span class="keyword">import</span> udemy
 
-<span class="variable">certifications</span> = [
-    <span class="string">"Google AI Essentials"</span>,
-    <span class="string">"Introduction to Generative AI"</span>,
-    <span class="string">"Python for Everybody - University of Michigan"</span>,
-    <span class="string">"Prompting Essentials"</span>,
-    <span class="string">"Learning Linux for LFCA Certification"</span>
-]
-
-<span class="variable">ongoing_courses</span> = {
-    <span class="string">"Cybersecurity"</span>: [
-        <span class="string">"IBM Cybersecurity Analyst Professional Certificate (Coursera)"</span>,
-        <span class="string">"Google Cybersecurity Professional Certificate (Coursera)"</span>
-    ],
-    <span class="string">"Programming"</span>: [
-        <span class="string">"100 Days of Code: The Complete Python Pro Bootcamp (Udemy)"</span>
+<span class="keyword">def</span> <span class="function">get_certifications</span>():
+    <span class="keyword">return</span> [
+        <span class="string">"Google AI Essentials"</span>,
+        <span class="string">"Introduction to Generative AI"</span>,
+        <span class="string">"Python for Everybody - University of Michigan"</span>,
+        <span class="string">"Prompting Essentials"</span>,
+        <span class="string">"Learning Linux for LFCA Certification"</span>
     ]
-}
+
+<span class="keyword">def</span> <span class="function">get_ongoing_courses</span>():
+    <span class="keyword">return</span> {
+        <span class="string">"Cybersecurity"</span>: [
+            <span class="string">"IBM Cybersecurity Analyst Professional Certificate (Coursera)"</span>,
+            <span class="string">"Google Cybersecurity Professional Certificate (Coursera)"</span>
+        ],
+        <span class="string">"Programming"</span>: [
+            <span class="string">"100 Days of Code: The Complete Python Pro Bootcamp (Udemy)"</span>
+        ]
+    }
 
 <span class="comment"># Skills & Tools</span>
 <span class="variable">skills</span> = {
@@ -154,21 +104,11 @@
 <span class="variable">work_experience</span> = (
     (<span class="string">"LinkNova"</span>, <span class="string">"SEO Email Outreach Specialist"</span>, <span class="string">"Remote"</span>, <span class="string">"2019 - 2025"</span>),
     (<span class="string">"Michael Cinco Couture"</span>, <span class="string">"Production Manager"</span>, <span class="string">"Dubai"</span>, <span class="string">"2016 - 2019"</span>),
-    (<span class="string">"Michael Cinco Couture"</span>, <span class="string">"Admin/IT Tech Support"</span>, <span class="string">"Dubai"</span>, <span class="string">"2016"</span>)
+    (<span class="string">"Michael Cinco Couture"</span>, <span class="string">"Admin/IT Tech Support"</span>, <span class="string">"Dubai"</span>, <span class="string">"2016"</span>),
+    (<span class="string">"Amazing Cars Insurance Inc."</span>, <span class="string">"Admin/IT Tech Support"</span>, <span class="string">"Philippines"</span>, <span class="string">"Oct 2010 - Apr 2012"</span>),
+    (<span class="string">"Sientifix"</span>, <span class="string">"Network Admin"</span>, <span class="string">"Philippines"</span>, <span class="string">"Feb 2008 - Mar 2009"</span>),
+    (<span class="string">"Total Transcription Solution Inc"</span>, <span class="string">"Medical Transcriptionist"</span>, <span class="string">"Philippines"</span>, <span class="string">"July 2006 - Dec 2006"</span>)
 )
-
-<span class="comment"># Projects</span>
-<span class="keyword">def</span> <span class="function">grep_playground</span>():
-    <span class="comment"># Interactive web-based tutorial for learning grep commands with real-time practice</span>
-    <span class="keyword">print</span>(<span class="string">"Visit: https://0xmoks.github.io/grep-playground"</span>)
-
-<span class="comment"># Connect</span>
-<span class="keyword">def</span> <span class="function">contact_me</span>():
-    <span class="keyword">print</span>(<span class="string">"Let's connect at mj.oralde@gmail.com or visit my LinkedIn."</span>)
-
-<span class="comment"># Function Calls (clickable)</span>
-<a href="https://0xmoks.github.io/grep-playground" target="_blank"><span class="function">grep_playground()</span></a>  
-<a href="mailto:mj.oralde@gmail.com?subject=Inquiry from Portfolio&body=Hi Michael, I saw your portfolio and would like to connect."><span class="function">contact_me()</span></a>
 </pre>
   </div>
 
@@ -177,42 +117,12 @@
     <h3><span class="keyword">class</span> <span class="function">Projects</span>:</h3>
     
     <div class="project-card">
-      <h4>Grep Playground</h4>
-      <p>Interactive web-based tutorial for learning grep, piping, and Unix commands with difficulty levels and real-time practice</p>
-      <a href="https://0xmoks.github.io/grep-playground" target="_blank" style="color: #859900; font-size: 0.8em;">View Project →</a>
-    </div>
-    
-    <h3><span class="keyword">def</span> <span class="function">get_certifications</span>():</h3>
-    <pre><span class="keyword">return</span> [
-    <span class="string">"Google AI Essentials"</span>,
-    <span class="string">"Python for Everybody"</span>,
-    <span class="string">"Linux LFCA Prep"</span>,
-    <span class="string">"Prompting Essentials"</span>,
-    <span class="string">"GenAI Intro"</span>
-]</pre>
-    
-    <h3><span class="keyword">def</span> <span class="function">current_learning</span>():</h3>
-    <pre><span class="keyword">return</span> {
-    <span class="string">"Coursera"</span>: [
-        <span class="string">"IBM Cybersecurity Analyst&#10;        Professional Certificate"</span>,
-        <span class="string">"Google Cybersecurity Professional&#10;        Certificate"</span>
-    ],
-    <span class="string">"Udemy"</span>: [
-        <span class="string">"100 Days of Code: The Complete Python&#10;        Pro Bootcamp"</span>
-    ]
-}</pre>
-    
-    <h3><span class="keyword">import</span> <span class="variable">social</span></h3>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/mjoralde" target="_blank" class="social-link">
-        LinkedIn
-      </a>
-      <a href="https://www.facebook.com/mjoralde" target="_blank" class="social-link">
-        Facebook
-      </a>
-      <a href="mailto:mj.oralde@gmail.com" class="social-link">
-        Email
-      </a>
+      <h4><span class="keyword">def</span> <span class="function">Grep_Playground</span>():</h4>
+      <pre><span class="keyword">print</span>(<span class="string">"""Interactive web-based tutorial for learning grep, piping, and Unix commands with real-time practice and multiple difficulty levels."""</span>)
+<span class="keyword">return</span> <span class="string">"https://0xmoks.github.io/grep-playground"</span>
+
+<span class="comment"># Click the function call below to visit the project</span>
+<a href="https://0xmoks.github.io/grep-playground" target="_blank"><span class="function">Grep_Playground()</span></a></pre>
     </div>
   </div>
 </body>
