@@ -328,6 +328,146 @@ a:hover { text-decoration: underline; color: #cb4b16; }
   padding: 3px 5px;
   margin: 0 -5px;
 } 
+
+/* Profile Section Styles */
+.profile-section {
+  padding: 15px;
+}
+
+.profile-photo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-photo-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #859900;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.profile-photo-img:hover {
+  transform: scale(1.05);
+  border-color: #b58900;
+  box-shadow: 0 4px 12px rgba(133, 153, 0, 0.3);
+}
+
+.photo-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #073642, #586e75);
+  border: 3px solid #859900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.photo-placeholder:hover {
+  transform: scale(1.05);
+  border-color: #b58900;
+}
+
+.photo-icon {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+.photo-text {
+  font-size: 0.8em;
+  color: #839496;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #073642;
+  transition: background-color 0.3s ease;
+}
+
+.contact-item:hover {
+  background-color: #073642;
+  border-radius: 3px;
+  padding: 8px 5px;
+  margin: 0 -5px;
+}
+
+.contact-label {
+  color: #586e75;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.contact-value {
+  color: #b58900;
+  font-weight: bold;
+  text-align: right;
+}
+
+.contact-link {
+  color: #2aa198;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: right;
+}
+
+.contact-link:hover {
+  color: #cb4b16;
+  text-decoration: underline;
+}
+
+.quick-stats {
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.stat-box {
+  background-color: #073642;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #586e75;
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+  background-color: #002b36;
+  border-color: #859900;
+  transform: translateY(-2px);
+}
+
+.stat-box .stat-number {
+  color: #859900;
+  font-size: 1.3em;
+  font-weight: bold;
+  display: block;
+}
+
+.stat-box .stat-label {
+  color: #586e75;
+  font-size: 0.8em;
+  margin-top: 2px;
+  display: block;
+} 
 =======
 * {
   margin: 0;

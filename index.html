@@ -13,106 +13,83 @@
       <div class="terminal-dot red"></div>
       <div class="terminal-dot yellow"></div>
       <div class="terminal-dot green"></div>
-      <span style="color: #839496; margin-left: 10px;">mjoralde@terminal:~$ python profile.py</span>
+      <span style="color: #839496; margin-left: 10px;">mjoralde@profile:~$ python contact.py</span>
     </div>
     
     <div class="terminal-content">
-      <div class="command-line">
-        <span class="prompt">$</span> <span class="command">python profile.py</span>
-        <div class="output">
-          <span class="keyword">import</span> <span class="variable">profile</span>
-          <span class="keyword">import</span> <span class="variable">skills</span>
-          <span class="keyword">import</span> <span class="variable">stats</span>
+      <div class="profile-section">
+        <div class="profile-photo">
+          <img src="cv.png" alt="Michael James L. Oralde" class="profile-photo-img">
         </div>
-      </div>
-      
-      <div class="system-info">
-        <h3><span class="keyword">class</span> <span class="function">SystemInfo</span>:</h3>
-        <div class="info-grid">
-          <div class="info-item">
-            <span class="label">OS:</span>
-            <span class="value">Ubuntu 22.04 LTS</span>
+        
+        <div class="contact-info">
+          <h3><span class="keyword">class</span> <span class="function">ContactInfo</span>:</h3>
+          
+          <div class="contact-item">
+            <span class="contact-label">Name:</span>
+            <span class="contact-value">Michael James L. Oralde</span>
           </div>
-          <div class="info-item">
-            <span class="label">CPU:</span>
-            <span class="value">12+ Years Experience</span>
+          
+          <div class="contact-item">
+            <span class="contact-label">Title:</span>
+            <span class="contact-value">Digital Operations Specialist</span>
           </div>
-          <div class="info-item">
-            <span class="label">RAM:</span>
-            <span class="value">5 Certifications</span>
+          
+          <div class="contact-item">
+            <span class="contact-label">Location:</span>
+            <span class="contact-value">Quezon City, Philippines</span>
           </div>
-          <div class="info-item">
-            <span class="label">Storage:</span>
-            <span class="value">3 Projects</span>
+          
+          <div class="contact-item">
+            <span class="contact-label">Email:</span>
+            <a href="mailto:mj.oralde@gmail.com" class="contact-link">mj.oralde@gmail.com</a>
+          </div>
+          
+          <div class="contact-item">
+            <span class="contact-label">Phone:</span>
+            <a href="tel:+639179620119" class="contact-link">+63 917-962-0119</a>
+          </div>
+          
+          <div class="contact-item">
+            <span class="contact-label">LinkedIn:</span>
+            <a href="https://www.linkedin.com/in/mjoralde" target="_blank" class="contact-link">linkedin.com/in/mjoralde</a>
+          </div>
+          
+          <div class="contact-item">
+            <span class="contact-label">GitHub:</span>
+            <a href="https://github.com/0xmoks" target="_blank" class="contact-link">github.com/0xmoks</a>
           </div>
         </div>
-      </div>
-      
-      <div class="process-list">
-        <h3><span class="keyword">def</span> <span class="function">active_processes</span>():</h3>
-        <div class="process-item">
-          <span class="process-name">Python Learning</span>
-          <div class="progress-bar">
-            <div class="progress-fill" style="width: 75%"></div>
+        
+        <div class="quick-stats">
+          <h3><span class="keyword">def</span> <span class="function">quick_stats</span>():</h3>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-number">12+</div>
+              <div class="stat-label">Years Exp</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">5</div>
+              <div class="stat-label">Certs</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Courses</div>
+            </div>
           </div>
-          <span class="process-status">75%</span>
         </div>
-        <div class="process-item">
-          <span class="process-name">Cybersecurity</span>
-          <div class="progress-bar">
-            <div class="progress-fill" style="width: 60%"></div>
+        
+        <div class="command-line">
+          <span class="prompt">$</span> <span class="command">./status.sh</span>
+          <div class="output">
+            <span class="success">✓</span> Available for opportunities<br>
+            <span class="success">✓</span> Open to remote work<br>
+            <span class="success">✓</span> Actively learning
           </div>
-          <span class="process-status">60%</span>
-        </div>
-        <div class="process-item">
-          <span class="process-name">SEO Mastery</span>
-          <div class="progress-bar">
-            <div class="progress-fill" style="width: 90%"></div>
-          </div>
-          <span class="process-status">90%</span>
-        </div>
-        <div class="process-item">
-          <span class="process-name">IT Support</span>
-          <div class="progress-bar">
-            <div class="progress-fill" style="width: 85%"></div>
-          </div>
-          <span class="process-status">85%</span>
-        </div>
-        <div class="process-item">
-          <span class="process-name">Linux Admin</span>
-          <div class="progress-bar">
-            <div class="progress-fill" style="width: 70%"></div>
-          </div>
-          <span class="process-status">70%</span>
-        </div>
-      </div>
-      
-      <div class="network-stats">
-        <h3><span class="keyword">def</span> <span class="function">network_stats</span>():</h3>
-        <div class="stat-row">
-          <span class="stat-label">Emails Sent:</span>
-          <span class="stat-value">50+ daily</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Sites Vetted:</span>
-          <span class="stat-value">100+ weekly</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Backlinks Secured:</span>
-          <span class="stat-value">25+ monthly</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Uptime:</span>
-          <span class="stat-value">99.9%</span>
-        </div>
-      </div>
-      
-      <div class="command-line">
-        <span class="prompt">$</span> <span class="command">./status.sh</span>
-        <div class="output">
-          <span class="success">✓</span> All systems operational<br>
-          <span class="success">✓</span> Skills up to date<br>
-          <span class="success">✓</span> Ready for new challenges
         </div>
       </div>
     </div>
