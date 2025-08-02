@@ -4,26 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Michael James L. Oralde - Python CV</title>
-  <style>
-    body {
-      background-color: #002b36;
-      color: #839496;
-      font-family: Consolas, monospace;
-      padding: 30px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .keyword { color: #859900; }     /* green */
-    .string { color: #2aa198; }      /* cyan */
-    .comment { color: #586e75; font-style: italic; }  /* gray italic */
-    .function { color: #cb4b16; }    /* orange */
-    .variable { color: #b58900; }    /* yellow-brown */
-    a { color: #b58900; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<pre>
+  <!-- Left Sidebar -->
+  <div class="sidebar">
+    <h3><span class="keyword">import</span> <span class="variable">profile</span></h3>
+    
+    <div class="stats">
+      <div class="stat-item">
+        <div class="stat-number">12+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">5</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Ongoing Courses</div>
+      </div>
+    </div>
+    
+    <h3><span class="keyword">class</span> <span class="function">Skills</span>:</h3>
+    <div>
+      <span class="variable">Python</span>
+      <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+      
+      <span class="variable">Cybersecurity</span>
+      <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
+      
+      <span class="variable">SEO</span>
+      <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+      
+      <span class="variable">IT Support</span>
+      <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+      
+      <span class="variable">Linux</span>
+      <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+    </div>
+    
+    <h3><span class="keyword">def</span> <span class="function">quick_stats</span>():</h3>
+    <pre><span class="comment"># Daily outreach emails</span>
+<span class="variable">emails_sent</span> = <span class="number">50</span> <span class="operator">+</span>
+<span class="comment"># Websites vetted</span>
+<span class="variable">sites_vetted</span> = <span class="number">100</span> <span class="operator">+</span>
+<span class="comment"># Backlinks secured</span>
+<span class="variable">backlinks</span> = <span class="number">25</span> <span class="operator">+</span></pre>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="terminal-header">
+      <div class="terminal-dot red"></div>
+      <div class="terminal-dot yellow"></div>
+      <div class="terminal-dot green"></div>
+      <span style="color: #839496; margin-left: 10px;">mjoralde@portfolio:~$ python cv.py</span>
+    </div>
+    
+    <pre>
 <span class="comment"># Personal Information</span>
 <span class="variable">NAME</span> = <span class="string">"Michael James L. Oralde"</span>
 <span class="variable">LOCATION</span> = <span class="string">"Quezon City, Philippines"</span>
@@ -52,17 +95,17 @@
 
 <span class="variable">ongoing_courses</span> = {
     <span class="string">"Cybersecurity"</span>: [
-        <span class="string">"Google Cybersecurity Professional Certificate"</span>,
-        <span class="string">"IBM Cybersecurity Analyst Professional Certificate"</span>
+        <span class="string">"IBM Cybersecurity Analyst Professional Certificate (Coursera)"</span>,
+        <span class="string">"Google Cybersecurity Professional Certificate (Coursera)"</span>
     ],
     <span class="string">"Programming"</span>: [
-        <span class="string">"100 Days of Code: The Complete Python Pro Bootcamp – Dr. Angela Yu"</span>
+        <span class="string">"100 Days of Code: The Complete Python Pro Bootcamp (Udemy)"</span>
     ]
 }
 
 <span class="comment"># Skills & Tools</span>
 <span class="variable">skills</span> = {
-    <span class="string">"Programming"</span>: [<span class="string">"Python"</span>, <span class="string">"MySQL"</span>], <span class="string">"HTML"</span>], <span class="string">"Javascript"</span>],
+    <span class="string">"Programming"</span>: [<span class="string">"Python"</span>, <span class="string">"MySQL"</span>],
     <span class="string">"SEO"</span>: [<span class="string">"Outreach"</span>, <span class="string">"Website Vetting"</span>, <span class="string">"Lead Generation"</span>],
     <span class="string">"IT Support"</span>: [<span class="string">"Networking"</span>, <span class="string">"Troubleshooting"</span>, <span class="string">"System Setup"</span>],
     <span class="string">"Tools"</span>: [<span class="string">"Google Workspace"</span>, <span class="string">"Microsoft Office Suite"</span>, <span class="string">"Trello"</span>],
@@ -77,27 +120,55 @@
 )
 
 <span class="comment"># Projects</span>
-<span class="keyword">def</span> <span class="function">SEO_outreach_automation</span>():
-    <span class="comment"># Automated backlink outreach with 50+ daily emails using Trello, Sheets, and custom filters</span>
-    <span class="keyword">print</span>(<span class="string">"Visit: https://github.com/yourusername/seo-automation"</span>)
-
-<span class="keyword">def</span> <span class="function">Excel_dress_tracker</span>():
-    <span class="comment"># Created Excel-based inventory system for wedding and evening gowns</span>
-    <span class="keyword">print</span>(<span class="string">"Visit: https://github.com/yourusername/fashion-tracker"</span>)
-
-<span class="keyword">def</span> <span class="function">Linux_security_labs</span>():
-    <span class="comment"># Documented notes from Linux hardening and bash scripting security labs</span>
-    <span class="keyword">print</span>(<span class="string">"Visit: https://github.com/yourusername/linux-labs"</span>)
+<span class="keyword">def</span> <span class="function">grep_playground</span>():
+    <span class="comment"># Interactive web-based tutorial for learning grep commands with real-time practice</span>
+    <span class="keyword">print</span>(<span class="string">"Visit: https://0xmoks.github.io/grep-playground"</span>)
 
 <span class="comment"># Connect</span>
 <span class="keyword">def</span> <span class="function">contact_me</span>():
-    <span class="keyword">print</span>(<span class="string">"Let’s connect at mj.oralde@gmail.com or visit my LinkedIn."</span>)
+    <span class="keyword">print</span>(<span class="string">"Let's connect at mj.oralde@gmail.com or visit my LinkedIn."</span>)
 
 <span class="comment"># Function Calls (clickable)</span>
-<a href="https://github.com/yourusername/seo-automation" target="_blank"><span class="function">SEO_outreach_automation()</span></a>  
-<a href="https://github.com/yourusername/fashion-tracker" target="_blank"><span class="function">Excel_dress_tracker()</span></a>  
-<a href="https://github.com/yourusername/linux-labs" target="_blank"><span class="function">Linux_security_labs()</span></a>  
+<a href="https://0xmoks.github.io/grep-playground" target="_blank"><span class="function">grep_playground()</span></a>  
 <a href="mailto:mj.oralde@gmail.com?subject=Inquiry from Portfolio&body=Hi Michael, I saw your portfolio and would like to connect."><span class="function">contact_me()</span></a>
 </pre>
+  </div>
+
+  <!-- Right Sidebar -->
+  <div class="sidebar">
+    <h3><span class="keyword">class</span> <span class="function">Projects</span>:</h3>
+    
+    <div class="project-card">
+      <h4>Grep Playground</h4>
+      <p>Interactive web-based tutorial for learning grep, piping, and Unix commands with difficulty levels and real-time practice</p>
+      <a href="https://0xmoks.github.io/grep-playground" target="_blank" style="color: #859900; font-size: 0.8em;">View Project →</a>
+    </div>
+    
+    <h3><span class="keyword">def</span> <span class="function">get_certifications</span>():</h3>
+    <pre><span class="keyword">return</span> [
+    <span class="string">"Google AI Essentials"</span>,
+    <span class="string">"Python for Everybody"</span>,
+    <span class="string">"Linux LFCA Prep"</span>,
+    <span class="string">"Prompting Essentials"</span>,
+    <span class="string">"GenAI Intro"</span>
+]</pre>
+    
+    <h3><span class="keyword">def</span> <span class="function">current_learning</span>():</h3>
+    <pre><span class="keyword">return</span> {
+    <span class="string">"IBM Cybersecurity Analyst"</span>: <span class="string">"Coursera"</span>,
+    <span class="string">"Google Cybersecurity"</span>: <span class="string">"Coursera"</span>,
+    <span class="string">"Python Bootcamp"</span>: <span class="string">"Udemy"</span>
+}</pre>
+    
+    <h3><span class="keyword">import</span> <span class="variable">social</span></h3>
+    <div style="margin-top: 15px;">
+      <a href="https://www.linkedin.com/in/mjoralde" target="_blank" style="display: block; margin: 5px 0; padding: 8px; background-color: #073642; border-radius: 4px; text-align: center;">
+        LinkedIn
+      </a>
+      <a href="mailto:mj.oralde@gmail.com" style="display: block; margin: 5px 0; padding: 8px; background-color: #073642; border-radius: 4px; text-align: center;">
+        Email
+      </a>
+    </div>
+  </div>
 </body>
 </html>
