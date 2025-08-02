@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Theme Dropdown -->
+  <div class="theme-dropdown">
+    <label for="theme-selector">Theme selector:</label>
+    <select id="theme-selector" onchange="changeTheme(this.value)">
+      <option value="solarized">Solarized</option>
+      <option value="darcula">Darcula</option>
+      <option value="purple">Shades of Purple</option>
+      <option value="slack">Slack</option>
+      <option value="cobalt2">Cobalt2</option>
+    </select>
+  </div>
+
   <!-- Left Sidebar -->
   <div class="sidebar">
     <div class="terminal-content">
@@ -71,22 +83,15 @@
 <span class="comment"># Educational Background</span>
 <span class="variable">education</span> = {
     <span class="string">"STI College Quezon Avenue"</span>: {
-        <span class="string">"degree"</span>: <span class="string">"Associate Degree in Computer Technology"</span>,
-        <span class="string">"period"</span>: <span class="string">"2012 - 2014"</span>
+        <span class="string">"degree"</span>: <span class="string">"Associate Degree in Computer Technology (2012 - 2014)"</span>
     },
     <span class="string">"E.A.R.N. School of Advanced Technology"</span>: {
-        <span class="string">"degree"</span>: <span class="string">"Computer Technician Vocational Program"</span>,
-        <span class="string">"period"</span>: <span class="string">"2004 - 2005"</span>
+        <span class="string">"degree"</span>: <span class="string">"Computer Technician Vocational Program (2004 - 2005)"</span>
     },
     <span class="string">"Total Transcription Solutions Inc."</span>: {
-        <span class="string">"degree"</span>: <span class="string">"Medical Transcription Training"</span>,
-        <span class="string">"period"</span>: <span class="string">"March 2006 - June 2006"</span>
+        <span class="string">"degree"</span>: <span class="string">"Medical Transcription Training (March 2006 - June 2006)"</span>
     }
 }
-
-<span class="comment"># Learning Path</span>
-<span class="keyword">import</span> coursera  
-<span class="keyword">import</span> udemy
 
 <span class="keyword">def</span> <span class="function">get_certifications</span>():
     <span class="keyword">return</span> [
@@ -121,7 +126,7 @@
   </div>
 
   <!-- Right Sidebar -->
-  <div class="sidebar">
+  <div class="sidebar right-sidebar">
     <h3><span class="keyword">class</span> <span class="function">Projects</span>:</h3>
     
     <div class="project-card">
@@ -144,5 +149,20 @@
     </div>
   </div>
 </body>
+
+<script>
+function changeTheme(theme) {
+  const body = document.body;
+  body.className = theme;
+  localStorage.setItem('selected-theme', theme);
+}
+
+// Load saved theme on page load
+document.addEventListener('DOMContentLoaded', function() {
+  const savedTheme = localStorage.getItem('selected-theme') || 'solarized';
+  document.getElementById('theme-selector').value = savedTheme;
+  changeTheme(savedTheme);
+});
+</script>
 </html>
 
